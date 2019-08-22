@@ -11,5 +11,5 @@ ENV JAVA_OPTS=""
 VOLUME /tmp
 
 # Install curl and bash for the entry script
-RUN apk --update add curl bash && \
+RUN apk --update add curl bash tini && \
 	rm -rf /var/cache/apk/*
