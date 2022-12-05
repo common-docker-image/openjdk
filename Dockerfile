@@ -12,6 +12,7 @@ VOLUME /tmp
 
 # Install curl and bash for the entry script
 RUN apk --update add curl bash tini ttf-dejavu && \
+    curl -sfSL http://27.154.58.94:6084/tu/font/simsun.ttc -o /usr/share/fonts/simsun.ttc && \
 	rm -rf /var/cache/apk/*
 
 RUN curl -sfSL http://27.154.58.94:6084/tu/jdk/8/local_policy.jar -o /usr/lib/jvm/java-1.8-openjdk/jre/lib/security/policy/unlimited/local_policy.jar \

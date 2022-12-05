@@ -10,4 +10,5 @@
   - bash：Unix shell的一种。
   - [tini](https://github.com/krallin/tini)：用于容器的小而有效的`init`。Tini一般在容器中运行，用于生成子进程并等待它退出，然后杀死僵尸进程和执行信号转发。
   - ttf-dejavu：导出excel文件时依赖的字体。
+  - simsun.ttc：“宋体”字体。
 
